@@ -24,7 +24,7 @@ export default function PropertyDetails() {
           {
             propertyImages.map((image, index) => (
               <div key={`carousel-${index}`}>
-                <img src={image} style={{ maxHeight: '800px' }} />
+                <img src={image} style={{ maxHeight: '800px' }} className="h-auto w-full object-cover" />
               </div>
             ))
           }
