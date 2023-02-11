@@ -1,10 +1,35 @@
+"use client";
 import Link from 'next/link';
 import Image from 'next/image';
 import { User } from 'react-feather';
+import { useState, useEffect } from 'react';
+import classNames from 'classnames';
 
 export default function Navbar() {
+  const [atTop, setAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = (event: any) => {
+      event.preventDefault();
+      if (
+        document.body.scrollTop >= 50 ||
+        document.documentElement.scrollTop >= 50
+      ) {
+        setAtTop(false);
+      } else {
+        setAtTop(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav id="topnav" className="defaultscroll is-sticky">
+    <nav id="topnav" className={classNames("defaultscroll is-sticky", { 'nav-sticky': !atTop })}>
       <div className="container">
         { /* Start Logo container */ }
         <Link href="/" className="logo">
