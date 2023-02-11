@@ -8,6 +8,8 @@ import classNames from 'classnames';
 export default function Navbar() {
   const [atTop, setAtTop] = useState(true);
 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = (event: any) => {
       event.preventDefault();
@@ -28,6 +30,10 @@ export default function Navbar() {
     };
   }, []);
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  }
+
   return (
     <nav id="topnav" className={classNames("defaultscroll is-sticky", { 'nav-sticky': !atTop })}>
       <div className="container">
@@ -41,7 +47,7 @@ export default function Navbar() {
         { /* End Logo container */ }
 
         { /* Start Mobile toggle */ }
-        <div className="menu-extras">
+        <div className="menu-extras" onClick={() => toggleMobileMenu() }>
           <div className="menu-item">
             <a className="navbar-toggle" id="isToggle">
                 <div className="lines">
@@ -67,17 +73,17 @@ export default function Navbar() {
         </ul>
         { /* Login button end */ }
 
-        <div id="navigation">
+        <div id="navigation" style={{ display: mobileMenuOpen ? 'block' : 'none' }}>
           { /* Start Navigation Menu */ }
           <ul className="navigation-menu justify-end nav-light">
-            <li className="has-submenu parent-menu-item">
-              <a href="javascript:void(0)">Home</a><span className="menu-arrow"></span>
-              <ul className="submenu">
-                <li><a href="index.html" className="sub-menu-item">Hero One</a></li>
-                <li><a href="index-two.html" className="sub-menu-item">Hero Two</a></li>
-                <li><a href="index-three.html" className="sub-menu-item">Hero Three</a></li>
-                <li><a href="index-four.html" className="sub-menu-item">Hero Four</a></li>
-              </ul>
+            <li className="sub-menu-item">
+              <Link href='/'>Home</Link>
+            </li>
+            <li className="sub-menu-item">
+              <Link href='/buy'>Buy</Link>
+            </li>
+            <li className="sub-menu-item">
+              <Link href='/buy'>Sell</Link>
             </li>
           </ul>
         </div>
