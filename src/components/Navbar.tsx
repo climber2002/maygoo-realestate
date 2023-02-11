@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { User } from 'react-feather';
 
 export default function Navbar() {
   return (
@@ -32,7 +33,7 @@ export default function Navbar() {
         <ul className="buy-button list-none mb-0">
           <li className="inline mb-0">
               <a href="auth-login.html" className="btn btn-icon bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600 text-white rounded-full">
-                <i data-feather="user" className="h-4 w-4 stroke-[3]" />
+                <User className="h-4 w-4 stroke-[3]" />
               </a>
           </li>
           <li className="sm:inline ltr:pl-1 rtl:pr-1 mb-0 hidden">
@@ -40,6 +41,21 @@ export default function Navbar() {
           </li>
         </ul>
         { /* Login button end */ }
+
+        <div id="navigation">
+          { /* Start Navigation Menu */ }
+          <ul className="navigation-menu justify-end nav-light">
+            <li className="has-submenu parent-menu-item">
+              <a href="javascript:void(0)">Home</a><span className="menu-arrow"></span>
+              <ul className="submenu">
+                <li><a href="index.html" className="sub-menu-item">Hero One</a></li>
+                <li><a href="index-two.html" className="sub-menu-item">Hero Two</a></li>
+                <li><a href="index-three.html" className="sub-menu-item">Hero Three</a></li>
+                <li><a href="index-four.html" className="sub-menu-item">Hero Four</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   )
