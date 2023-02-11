@@ -2,7 +2,8 @@
 import Navbar from "@/components/Navbar";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { UilCompressArrows, UilBedDouble, UilBath } from "@iconscout/react-unicons";
+import { UilCompressArrows, UilBedDouble, UilBath, UilPhone } from "@iconscout/react-unicons";
+import Footer from "@/components/Footer";
 
 const propertyImages = [
   "/images/property/single/1.jpg",
@@ -60,13 +61,70 @@ export default function PropertyDetails() {
 
             <div className="w-full leading-[0] border-0 mt-6">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-                style={{border: 0}}
+                style={{ border: 0 }}
                 className="w-full h-[500px]"
                 allowFullScreen={true} />
             </div>
           </div>
+
+          {/* Price */}
+          <div className="lg:w-1/3 md:w-1/2 md:p-4 px-3 mt-8 md:mt-0">
+            <div className="sticky top-20">
+              <div className="rounded-md bg-slate-50 dark:bg-slate-800 shadow dark:shadow-gray-700">
+                <div className="p-6">
+                  <h5 className="text-2xl font-medium">Price:</h5>
+
+                  <div className="flex justify-between items-center mt-4">
+                    <span className="text-xl font-medium">$ 45,231</span>
+
+                    <span className="bg-orange-600/10 text-orange-600 text-sm px-2.5 py-0.75 rounded h-6">For Sale</span>
+                  </div>
+
+                  <ul className="list-none mt-4">
+                    <li className="flex justify-between items-center">
+                      <span className="text-slate-400 text-sm">Days on Hously</span>
+                      <span className="font-medium text-sm">124 Days</span>
+                    </li>
+
+                    <li className="flex justify-between items-center mt-2">
+                      <span className="text-slate-400 text-sm">Price per sq ft</span>
+                      <span className="font-medium text-sm">$ 186</span>
+                    </li>
+
+                    <li className="flex justify-between items-center mt-2">
+                      <span className="text-slate-400 text-sm">Monthly Payment (estimate)</span>
+                      <span className="font-medium text-sm">$ 1497/Monthly</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex">
+                  <div className="p-1 w-1/2">
+                    <a href="" className="btn bg-orange-600 hover:bg-orange-700 text-white rounded-md w-full">Book Now</a>
+                  </div>
+                  <div className="p-1 w-1/2">
+                    <a href="" className="btn bg-orange-600 hover:bg-orange-700 text-white rounded-md w-full">Offer Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-12 text-center">
+                <h3 className="mb-6 text-xl leading-normal font-medium text-black dark:text-white">Have Question ? Get in touch!</h3>
+
+                <div className="mt-6">
+                  <a href="contact.html" className="btn bg-transparent hover:bg-orange-600 border border-orange-600 text-orange-600 hover:text-white rounded-md">
+                    <UilPhone className="align-middle ltr:mr-2 rtl:ml-2" /> Contact us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* End Price */}
         </div>
       </div>
+      { /* End Property Details */}
+      
+      <Footer />
     </div>
   )
 }

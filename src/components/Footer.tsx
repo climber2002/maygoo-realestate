@@ -18,7 +18,8 @@ export default function Footer() {
 
                   <div className="subcribe-form z-1">
                     <form className="relative max-w-lg ltr:md:ml-auto rtl:md:mr-auto">
-                      <input type="email" id="subcribe" name="email" className="rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700" placeholder="Enter your email :" />
+                      <input type="email" 
+                        id="subcribe" name="email" className="rounded-full bg-white dark:bg-slate-900 shadow dark:shadow-gray-700" placeholder="Enter your email :" />
                       <button type="submit" className="btn bg-orange-600 hover:bg-orange-700 text-white rounded-full">Subscribe</button>
                     </form>
                   </div>
