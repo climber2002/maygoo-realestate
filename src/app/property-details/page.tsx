@@ -16,7 +16,7 @@ const propertyImages = [
 export default function PropertyDetails() {
   return (
     <div className="dark:bg-slate-900">
-      <Navbar />
+      <Navbar alwaysShowBanner={true} />
 
       { /* Property Images */}
       <section className="relative md:pb-24 pb-16 mt-20">

@@ -5,14 +5,22 @@ import { User } from 'react-feather';
 import { useState, useEffect } from 'react';
 import classNames from 'classnames';
 
-export default function Navbar() {
-  const [atTop, setAtTop] = useState(true);
+interface NavbarProps {
+  alwaysShowBanner?: boolean;
+}
+
+export default function Navbar({ alwaysShowBanner = false }: NavbarProps) {
+  const [atTop, setAtTop] = useState(!alwaysShowBanner);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = (event: any) => {
       event.preventDefault();
+      if(alwaysShowBanner) {
+        return;
+      }
+
       if (
         document.body.scrollTop >= 50 ||
         document.documentElement.scrollTop >= 50
