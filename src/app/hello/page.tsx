@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { Search } from "react-feather";
+import { UilEstate, UilSearch } from "@iconscout/react-unicons";
 
 export default function Home() {
   return (
@@ -40,23 +41,26 @@ export default function Home() {
                       <div>
                           <label className="form-label font-medium">Search : <span className="text-red-600">*</span></label>
                           <div className="filter-search-form relative filter-border mt-2">
-                              <Search className="uil uil-search icons" />
+                              <UilSearch className="uil uil-search icons" />
                               <input name="name" type="text" id="job-keyword" className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search your keaywords" />
                           </div>
                       </div>
 
-                            {/* <div>
-                                <label for="buy-properties" class="form-label font-medium">Select Categories:</label>
-                                <div class="filter-search-form relative filter-border mt-2">
-                                    <i class="uil uil-estate icons"></i>
-                                    <select class="form-select z-2" data-trigger name="choices-catagory" id="choices-catagory-buy" aria-label="Default select example">
-                                        <option>Houses</option>
-                                        <option>Apartment</option>
-                                        <option>Offices</option>
-                                        <option>Townhome</option>
-                                    </select>
-                                </div>
-                            </div>
+                      <div>
+                        <label htmlFor="buy-properties" className="form-label font-medium">Select Categories:</label>
+                        <div className="filter-search-form relative filter-border mt-2">
+                          <UilEstate className="uil uil-estate icons" />
+                          <select className="form-select z-2" data-trigger name="choices-catagory" id="choices-catagory-buy" aria-label="Default select example">
+                              <option>Houses</option>
+                              <option>Apartment</option>
+                              <option>Offices</option>
+                              <option>Townhome</option>
+                          </select>
+                        </div>
+                      </div>
+
+                            {/* 
+                              
                         
                             <div>
                                 <label for="buy-min-price" class="form-label font-medium">Min Price :</label>
