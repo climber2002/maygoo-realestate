@@ -3,6 +3,7 @@ import HowItWorks from "../../pageComponents/Homepage/HowItWorks";
 import Navbar from "../../components/Navbar";
 import { UilEstate, UilSearch, UilUsdCircle } from "@iconscout/react-unicons";
 import AwardsGained from "@/pageComponents/Homepage/AwardsGained";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -128,6 +129,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Footer/>
     </>
   )
 }
