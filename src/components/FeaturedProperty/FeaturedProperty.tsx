@@ -9,24 +9,24 @@ export default function FeaturedProperty() {
 
       <div className="p-6">
         <div className="pb-6">
-          <a href="property-detail.html" className="text-lg hover:text-green-600 font-medium ease-in-out duration-500">
+          <a href="property-detail.html" className="text-lg hover:text-orange-600 font-medium ease-in-out duration-500">
             10765 Hillshire Ave, Baton Rouge, LA 70810, USA
           </a>
         </div>
 
         <ul className="py-6 border-y dark:border-gray-800 flex items-center list-none">
           <li className="flex items-center mr-4">
-            <UilCompressArrows className="text-2xl mr-2 text-green-600" />
+            <UilCompressArrows className="text-2xl mr-2 text-orange-600" />
             <span>8000sqf</span>
           </li>
 
           <li className="flex items-center mr-4">
-            <UilBedDouble className="text-2xl mr-2 text-green-600" />
+            <UilBedDouble className="text-2xl mr-2 text-orange-600" />
             <span>4 Beds</span>
           </li>
 
           <li className="flex items-center">
-            <UilBath className="text-2xl mr-2 text-green-600" />
+            <UilBath className="text-2xl mr-2 text-orange-600" />
             <span>4 Baths</span>
           </li>
         </ul>

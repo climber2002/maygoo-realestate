@@ -17,8 +17,8 @@ export default function HowItWorks() {
         { /* Content */}
         <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
           <div className="relative overflow-hidden text-transparent -m-3">
-            <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
-            <div className="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+            <Hexagon className="h-32 w-32 fill-orange-600/5 mx-auto" />
+            <div className="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-orange-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
               <UilEstate />
             </div>
           </div>
@@ -33,8 +33,8 @@ export default function HowItWorks() {
         { /* Content */}
         <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
           <div className="relative overflow-hidden text-transparent -m-3">
-            <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
-            <div className="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+            <Hexagon className="h-32 w-32 fill-orange-600/5 mx-auto" />
+            <div className="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-orange-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
               <UilBag />
             </div>
           </div>
@@ -49,8 +49,8 @@ export default function HowItWorks() {
         { /* Content */}
         <div className="group relative lg:px-10 transition-all duration-500 ease-in-out rounded-xl bg-white dark:bg-slate-900 overflow-hidden text-center">
           <div className="relative overflow-hidden text-transparent -m-3">
-            <Hexagon className="h-32 w-32 fill-green-600/5 mx-auto" />
-            <div className="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-green-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
+            <Hexagon className="h-32 w-32 fill-orange-600/5 mx-auto" />
+            <div className="absolute top-2/4 -translate-y-2/4 left-0 right-0 mx-auto text-orange-600 rounded-xl transition-all duration-500 ease-in-out text-4xl flex align-middle justify-center items-center">
               <UilKeySkeleton />
             </div>
           </div>

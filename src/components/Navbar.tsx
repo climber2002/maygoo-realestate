@@ -63,12 +63,12 @@ export default function Navbar() {
         { /* Login button start */ }
         <ul className="buy-button list-none mb-0">
           <li className="inline mb-0">
-              <a href="auth-login.html" className="btn btn-icon bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600 text-white rounded-full">
+              <a href="auth-login.html" className="btn btn-icon bg-orange-600 hover:bg-green-700 border-green-600 dark:border-green-600 text-white rounded-full">
                 <User className="h-4 w-4 stroke-[3]" />
               </a>
           </li>
           <li className="sm:inline ltr:pl-1 rtl:pr-1 mb-0 hidden">
-              <a href="auth-signup.html" className="btn bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600 text-white rounded-full">Signup</a>
+              <a href="auth-signup.html" className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 dark:border-orange-600 text-white rounded-full">Signup</a>
           </li>
         </ul>
         { /* Login button end */ }

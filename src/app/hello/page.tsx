@@ -27,7 +27,7 @@ export default function Home() {
 
             <ul className="inline-block mx-auto sm:w-fit w-full flex-wrap justify-center text-center p-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-t-xl border-b dark:border-gray-800 mt-10" id="myTab" data-tabs-toggle="#StarterContent" role="tablist">
               <li role="presentation" className="inline-block">
-                <button className="sm:px-8 px-6 py-2 text-base font-medium rounded-xl w-full hover:text-green-600 transition-all duration-500 ease-in-out" id="buy-home-tab" data-tabs-target="#buy-home" type="button" role="tab" aria-controls="buy-home" aria-selected="true">Buy</button>
+                <button className="sm:px-8 px-6 py-2 text-base font-medium rounded-xl w-full hover:text-orange-600 transition-all duration-500 ease-in-out" id="buy-home-tab" data-tabs-target="#buy-home" type="button" role="tab" aria-controls="buy-home" aria-selected="true">Buy</button>
               </li>
               <li role="presentation" className="inline-block">
                 <button className="sm:px-8 px-6 py-2 text-base font-medium rounded-xl w-full transition-all duration-500 ease-in-out" id="sell-home-tab" data-tabs-target="#sell-home" type="button" role="tab" aria-controls="sell-home" aria-selected="false">Sell</button>
@@ -45,7 +45,7 @@ export default function Home() {
                       <div>
                         <label className="form-label font-medium">Search : <span className="text-red-600">*</span></label>
                         <div className="filter-search-form relative filter-border mt-2">
-                          <UilSearch className="uil uil-search icons" />
+                          <UilSearch className="uil uil-search icons text-orange-600" />
                           <input name="name" type="text" id="job-keyword" className="form-input filter-input-box bg-gray-50 dark:bg-slate-800 border-0" placeholder="Search your keaywords" />
                         </div>
                       </div>
@@ -53,7 +53,7 @@ export default function Home() {
                       <div>
                         <label htmlFor="buy-properties" className="form-label font-medium">Select Categories:</label>
                         <div className="filter-search-form relative filter-border mt-2 bg-gray-50">
-                          <UilEstate className="uil uil-estate icons" />
+                          <UilEstate className="uil uil-estate icons text-orange-600" />
                           <select className="form-select z-2 filter-input-box bg-gray-50" data-trigger name="choices-catagory" id="choices-catagory-buy" aria-label="Default select example">
                             <option>Houses</option>
                             <option>Apartment</option>
@@ -66,7 +66,7 @@ export default function Home() {
                       <div>
                         <label htmlFor="buy-min-price" className="form-label font-medium">Min Price :</label>
                         <div className="filter-search-form relative filter-border mt-2 bg-gray-50">
-                          <UilUsdCircle className="uil uil-usd-circle icons" />
+                          <UilUsdCircle className="uil uil-usd-circle icons text-orange-600" />
                           <select className="form-select z-2 filter-input-box bg-gray-50" data-trigger name="choices-min-price" id="choices-min-price-buy" aria-label="Default select example">
                             <option>Min Price</option>
                             <option>500</option>
@@ -83,7 +83,7 @@ export default function Home() {
                       <div>
                         <label htmlFor="buy-max-price" className="form-label font-medium">Max Price :</label>
                         <div className="filter-search-form relative mt-2 bg-gray-50">
-                          <UilUsdCircle className="uil uil-usd-circle icons" />
+                          <UilUsdCircle className="uil uil-usd-circle icons text-orange-600" />
                           <select className="form-select z-2 filter-input-box bg-gray-50" data-trigger name="choices-max-price" id="choices-max-price-buy" aria-label="Default select example">
                             <option>Max Price</option>
                             <option>500</option>
@@ -98,7 +98,7 @@ export default function Home() {
                       </div>
 
                       <div className="lg:mt-6">
-                        <input type="submit" id="search-buy" name="search" className="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-green-700 text-white searchbtn submit-btn w-full !h-12 rounded" value="Search" />
+                        <input type="submit" id="search-buy" name="search" className="btn bg-orange-600 hover:bg-orange-700 border-orange-600 hover:border-orange-700 text-white searchbtn submit-btn w-full !h-12 rounded" value="Search" />
                       </div>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function Home() {
             <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
 
             <div className="mt-6">
-              <a href="contact.html" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"><i className="uil uil-phone align-middle ltr:mr-2 rtl:ml-2"></i> Contact us</a>
+              <a href="contact.html" className="btn bg-orange-600 hover:bg-orange-700 text-white rounded-md"><i className="uil uil-phone align-middle ltr:mr-2 rtl:ml-2"></i> Contact us</a>
             </div>
           </div>
         </div>
